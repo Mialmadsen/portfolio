@@ -11,10 +11,16 @@
         <div class="logo_wrapper col-span-6 flex justify-self-center">
           <img alt="Personal logo" class="logo col-span-2" src="@/assets/Logo 2.svg" width="50" height="50" />
         </div>
-        <div class="socials_wrapper col-span-3 flex justify-self-end">
-            <img alt="instagram logo" class="instagram" src="@/assets/instagram.svg" width="30" height="30" href="https://www.instagram.com/mia_lybaek_madsen/" />
+        <div class="socials_wrapper_nav col-span-3 flex justify-self-end">
+          <a href="https://www.instagram.com/mia_lybaek_madsen/profilecard/">
+            <img alt="instagram logo" class="instagram" src="@/assets/instagram.svg" width="29" height="29" />
+          </a>  
+          <a href="https://www.linkedin.com/in/mialybaekmadsen/">
             <img alt="linkedin logo" class="linkedin" src="@/assets/linkedin.svg" width="31" height="31" />
+          </a>
+           <a href="https://www.facebook.com/mia.madsen.3194?locale=da_DK">
             <img alt="facebook logo" class="facebook" src="@/assets/facebook.svg" width="30" height="30" />
+           </a>
         </div>
     </nav>
 </template>
@@ -67,15 +73,20 @@ nav a:first-of-type {
   border: 0;
 }
 
-.socials_wrapper {
+.socials_wrapper_nav {
   display: flex;
   justify-self: end;
   gap: 1rem;
 }
 
-.socials_wrapper img:hover {
+.socials_wrapper_nav img:hover {
   cursor: pointer;
   
 }
+
+.socials_wrapper_nav a {
+  padding-right: 0;
+}
+
 
 </style>
