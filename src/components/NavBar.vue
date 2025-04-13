@@ -1,6 +1,5 @@
 <template>
     <nav class="grid grid-cols-12 gap-4">
-      
 
       <div class="col-span-3">
         <RouterLink class="" to="/">FORSIDE</RouterLink>
@@ -14,7 +13,7 @@
         </div>
         <div class="socials_wrapper col-span-3 flex justify-self-end">
             <img alt="instagram logo" class="instagram" src="@/assets/instagram.svg" width="30" height="30" href="https://www.instagram.com/mia_lybaek_madsen/" />
-            <img alt="linkedin logo" class="linkedin" src="@/assets/linkedin.svg" width="26" height="26" />
+            <img alt="linkedin logo" class="linkedin" src="@/assets/linkedin.svg" width="31" height="31" />
             <img alt="facebook logo" class="facebook" src="@/assets/facebook.svg" width="30" height="30" />
         </div>
     </nav>
@@ -41,19 +40,14 @@ nav {
   
 }
 
-.wrapper {
-  
-}
-
 .logo {
   display: flex;
   justify-self: center;
 
 }
 
-
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: var(--color-very-grey);
 }
 
 nav a.router-link-exact-active:hover {
@@ -62,8 +56,11 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding-left: 1rem;
- 
+  padding-right: 2rem;
+}
+
+nav a:hover {
+  color: var(--color-very-grey);
 }
 
 nav a:first-of-type {
@@ -71,10 +68,14 @@ nav a:first-of-type {
 }
 
 .socials_wrapper {
-    display: flex;
+  display: flex;
+  justify-self: end;
+  gap: 1rem;
 }
 
-.socials_wrapper img {
-    margin: 0.2rem;
+.socials_wrapper img:hover {
+  cursor: pointer;
+  
 }
+
 </style>

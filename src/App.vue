@@ -39,11 +39,11 @@ import NavBar from '@/components/NavBar.vue'
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 1rem;
     padding: 1rem 0;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }
 </style>
