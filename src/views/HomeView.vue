@@ -38,13 +38,13 @@ onMounted(() => {
     </div>
 
   <!-- Velkommen section -->
-<div class="velkommen-section grid grid-cols-12 h-125 !mt-40 opacity-0 translate-x-20 transition-all duration-700" ref="velkommenSection">
+<div class="velkommen-section grid grid-cols-12 h-125 opacity-0 translate-x-20 transition-all duration-700" ref="velkommenSection">
   <div class="velkommen-container col-span-8 col-start-3 h-125 bg-very-light-grey flex items-center">
     <div class="velkommen-text-box">
-      <h3 class="font-family1 text-very-dark text-4xl !ml-20 sm:ml-0 sm:text-2xl sm:align-left">
+      <h3 class="font-family1 text-very-dark text-4xl sm:text-2xl sm:align-left">
         Velkommen til!
       </h3>
-      <p class="font-family3 text-very-dark text-lg !w-1/2 !ml-20 !mt-4 sm:w-full sm:ml-0 sm:text-left">
+      <p class="font-family3 text-very-dark text-lg sm:w-full sm:ml-0 sm:text-left">
         Mit navn er Mia Lybæk Madsen - og dette er min portfolio-hjemmeside. 
         Her kan du læse om mig både proffesionelt og personligt, samt få et indblik i hvilke evner og kompetencer jeg har tillært mig indenfor verdenen som multimediedesigner. 
         Udforsk nogle af mine seneste projekter og kreationer, og lær mig bedre at kende som person. 
@@ -58,13 +58,13 @@ onMounted(() => {
 
 
     <!-- Webudvikling section -->
-      <div class="webudviking-section grid grid-cols-12 gap-4 !mt-50">
+      <div class="webudviking-section grid grid-cols-12 gap-4">
         <!-- Image spans 6 columns -->
         <div class="col-span-7 mx-auto overflow-hidden h-125">
           <img src="../assets/Plastic website.png" alt="webudvikling Image" class="w-full object-cover" />
         </div>
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 !ml-20">
+        <div class="web-text col-span-4">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Webudvikling
           </h3>
@@ -75,9 +75,9 @@ onMounted(() => {
       </div>
 
     <!-- Content Creation section -->
-      <div class="content-creation-section grid grid-cols-12 gap-4 !mt-50">
+      <div class="content-creation-section grid grid-cols-12 gap-4">
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 col-start-2 !mr-20">
+        <div class="content-text col-span-4 col-start-2">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Content Creation
           </h3>
@@ -93,7 +93,7 @@ onMounted(() => {
       </div>
 
     <!-- Kontakt mig section -->
-    <div class="kontakt-mig-section grid grid-cols-12 !mt-50">
+    <div class="kontakt-mig-section grid grid-cols-12">
   <div class="col-span-8 col-start-3 h-125 bg-very-light-grey flex flex-col items-center justify-center text-center">
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Kontakt Mig
@@ -130,6 +130,35 @@ onMounted(() => {
     cursor: pointer;
   }
 
+  .velkommen-section {
+    margin-top: 10rem;
+  }
+
+  .velkommen-text-box {
+    margin: 80px;
+  }
+
+  .webudviking-section {
+    margin-top: 10rem;
+  }
+
+  .web-text {
+    margin-left: 80px;
+  }
+
+  .content-creation-section {
+    margin-top: 10rem;
+  }
+
+  .content-text {
+    margin-right: 80px;
+  }
+
+  .kontakt-mig-section {
+    margin-top: 10rem;
+  }
+
+
 
   @media (max-width: 768px) {
    
@@ -144,11 +173,11 @@ onMounted(() => {
       object-fit: cover;
     }
     .relative h1 {
-      font-size: 2rem;
+      font-size: 1rem;
     }
 
     .relative h2 {
-      font-size: 1rem;
+      font-size: 0.5rem;
     }
 
 
@@ -157,12 +186,9 @@ onMounted(() => {
     height: auto; 
     padding: 1rem; 
     grid-template-columns: 1fr; 
-    
-  }
-
-  .velkommen-section.grid {
-    margin-top: 1rem;
-  }
+    margin-top: 3rem;
+    margin-right: 1rem;
+    }
 
   .velkommen-container {
     align-items: center; 
@@ -170,7 +196,7 @@ onMounted(() => {
     padding: 1rem; 
     box-sizing: border-box; 
     width: 100%; 
-    margin-top: 0 !important; /* Fjern margin-top */
+    margin-top: 0
   }
 
   .velkommen-container img {
@@ -181,7 +207,7 @@ onMounted(() => {
     width: 100%; 
     padding: 1rem; 
     box-sizing: border-box; 
-    margin: none; 
+    margin: 0;
   }
   .velkommen-text-box h3 {
     font-size: 1rem; 
@@ -196,11 +222,111 @@ onMounted(() => {
   }
 
 
+/* Webudvikling Section */
+
+.webudviking-section {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "text"
+      "image"; 
+    gap: 2rem; 
+    margin-top: 3rem;
+  }
+
+  .webudviking-section .col-span-7 {
+    grid-area: image; 
+    height: auto;
+  }
+
+  .webudviking-section .col-span-4 {
+    grid-area: text; 
+    margin-left: 0;  
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+
+.web-text h3 {
+  font-size: 1rem;
+}
+
+.web-text p {
+  font-size: 0.7rem;
+}
 
 
 
+  /* Content Creation Section */
+  .content-creation-section {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "text"
+      "image"; 
+    gap: 2rem; 
+    margin-top: 3rem;
+  }
 
+  .content-creation-section .col-span-7 {
+    grid-area: image; 
+    height: auto;
+  }
 
+  .content-creation-section .col-span-4 {
+    grid-area: text; 
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;    
+  }
+  .content-creation-section img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .content-text h3 {
+    font-size: 1rem; 
+  }
+  .content-text p {
+    font-size: 0.7rem; 
+  }
+
+  /* Kontakt mig Section */
+  .kontakt-mig-section {
+    grid-template-columns: 1fr; /* Skift til én kolonne */
+    gap: 1rem; /* Tilføj afstand mellem elementerne */
+    margin: 0 auto; /* Centrer sektionen */
+    padding: 1rem; /* Tilføj indvendig afstand */
+    margin-right: 2rem;
+    margin-top: 3rem;
+    height: auto;
+    }
+
+  .kontakt-mig-section > div {
+    width: 100%; /* Gør tekstboksen fuld bredde */
+    margin: 0 auto; /* Centrer boksen */
+    padding: 1rem; /* Tilføj padding for spacing */
+    height: auto;
+    padding: 1rem;
+  }
+
+  .kontakt-mig-section h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .kontakt-mig-section p {
+    font-size: 0.7rem;
+    text-align: center; /* Sørg for, at teksten forbliver centreret */
+  }
+
+  .socials_wrapper {
+    justify-content: center; /* Centrer sociale ikoner */
+    gap: 1rem; /* Tilføj afstand mellem ikonerne */
+  }
+
+  .socials_wrapper img {
+    width: 20px; /* Juster størrelsen på ikonerne */
+    height: 20px;
+  }
   
   
 

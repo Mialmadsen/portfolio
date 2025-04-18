@@ -1,10 +1,14 @@
+<script setup>
+
+</script>
+
 <template> 
 
-    <footer class="bg-very-grey text-very-dark !mt-40">
+    <footer class="bg-very-grey text-very-dark ">
         <div class="grid grid-cols-12 gap-4 h-30">
     
     <!-- Left Section -->
-    <div class="col-span-1 col-start-2 font-family1 text-very-dark flex flex-col justify-start !pt-4">
+    <div class="col-span-1 col-start-2 font-family1 text-very-dark flex flex-col justify-start !pt-6">
         <RouterLink to="/">FORSIDE</RouterLink>
         <RouterLink to="/portfolio">PORTFOLIO</RouterLink>
         <RouterLink to="/about">OM MIG</RouterLink>
@@ -29,10 +33,43 @@
 
 </template>
 
-<script setup>
-
-</script>
 
 <style>
+
+footer {
+    margin-top: 10rem;
+}
+
+@media (max-width: 768px) {
+
+footer {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  footer .grid {
+    display: flex;                 
+    flex-direction: column;       
+    align-items: center;          
+    gap: 2rem;
+    text-align: center;
+  }
+
+  footer .col-span-1 {
+    display: flex;               
+    flex-direction: column;
+    align-items: center;          
+    gap: 0.5rem;
+  }
+
+  footer .col-start-11 {
+    display: none;              
+  }
+
+  footer a {
+    font-size: 0.7rem;
+  }
+}
+
 
 </style>

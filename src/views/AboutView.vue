@@ -237,7 +237,6 @@ onMounted(() => {
     height: auto; 
     padding: 1rem; 
     grid-template-columns: 1fr; 
-    
   }
 
   .om-mig-section.grid {
@@ -250,7 +249,8 @@ onMounted(() => {
     padding: 1rem; 
     box-sizing: border-box; 
     width: 100%; 
-    margin-top: 0 !important; /* Fjern margin-top */
+    margin-top: 0;
+    flex-direction: column;
   }
 
   .om-mig-text-box {
@@ -269,6 +269,10 @@ onMounted(() => {
     font-size: 0.7rem; 
     margin: none; 
     width: 100%;
+  }
+
+  .cv-businesscard-section {
+    flex-direction: row;
   }
 
 
