@@ -35,13 +35,13 @@ onMounted(() => {
     </div>
 
 <!-- Portfolio section -->
-<div class="portfolio-section grid grid-cols-12 h-125 !mt-40 opacity-0 translate-x-20 transition-all duration-700" ref="portfolioSection">
+<div class="portfolio-section grid grid-cols-12 h-125 opacity-0 translate-x-20 transition-all duration-700" ref="portfolioSection">
   <div class="portfolio-container col-span-8 col-start-3 h-125 bg-very-light-grey flex items-center">
     <div class="portfolio-text-box">
-      <h3 class="font-family1 text-very-dark text-4xl !ml-20">
+      <h3 class="font-family1 text-very-dark text-4xl !mb-4">
         Hvad kan man egentlig som multimediedesigner?
       </h3>
-      <p class="font-family3 text-very-dark text-lg w-2/3 !ml-20 !mt-4">
+      <p class="font-family3 text-very-dark text-lg w-2/3">
         På denne side kan du læse om nogle af de projekter jeg har lavet under min uddannelse som multimediedesigner, hvilket forhåbenligt kan give et indblik i de kompetencer jeg har tilegnet mig, og stadig arbejder hver dag på at forbedre!
         Derudover kan du også læse om noget af det arbejde jeg har lavet udenfor skolen som SoMe content creator, hvor jeg har arbejdet med at skabe indhold til sociale medier for forskellige brands.
       </p>
@@ -51,13 +51,13 @@ onMounted(() => {
 </div>
 
     <!-- Hotel website section -->
-    <div class="hotel-website-section grid grid-cols-12 gap-4 !mt-50">
+    <div class="hotel-website-section grid grid-cols-12 gap-4">
         <!-- Image spans 6 columns -->
         <div class="col-span-7 mx-auto overflow-hidden h-125">
           <img src="../assets/hotelsite.png" alt="webudvikling Image" class="w-full object-cover" />
         </div>
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 !ml-20">
+        <div class="hotel-text-box col-span-4">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Hotel Hjemmeside
           </h3>
@@ -69,9 +69,9 @@ onMounted(() => {
     
     
     <!-- Swim run event section -->
-    <div class="event-section grid grid-cols-12 gap-4 !mt-50">
+    <div class="event-section grid grid-cols-12 gap-4">
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 col-start-2 !mr-20">
+        <div class="event-text-box col-span-4 col-start-2">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Swim Run Event
           </h3>
@@ -89,13 +89,13 @@ onMounted(() => {
 
 
      <!-- Recipe Webside section -->
-     <div class="recipe-website-section grid grid-cols-12 gap-4 !mt-50">
+     <div class="recipe-website-section grid grid-cols-12 gap-4">
         <!-- Image spans 6 columns -->
         <div class="col-span-7 mx-auto overflow-hidden h-125">
           <img src="../assets/opskrifthjemmeside.png" alt="webudvikling Image" class="w-full object-cover" />
         </div>
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 !ml-20">
+        <div class="recipe-text-box col-span-4">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Opskrift Hjemmeside
           </h3>
@@ -106,9 +106,9 @@ onMounted(() => {
       </div>
 
     <!-- Plastic project section -->
-      <div class="plastic-project-section grid grid-cols-12 gap-4 !mt-50">
+      <div class="plastic-project-section grid grid-cols-12 gap-4">
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 col-start-2 !mr-20">
+        <div class="plastic-project-text-box col-span-4 col-start-2">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Plastik Projekt
           </h3>
@@ -123,13 +123,13 @@ onMounted(() => {
       </div>
 
        <!-- Promo video section -->
-     <div class="promo-video-section grid grid-cols-12 gap-4 !mt-50">
+     <div class="promo-video-section grid grid-cols-12 gap-4">
         <!-- Image spans 6 columns -->
         <div class="col-span-7 mx-auto overflow-hidden h-125">
           <img src="../assets/reklamevideo.png" alt="webudvikling Image" class="w-full object-cover" />
         </div>
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 !ml-20">
+        <div class="promo-text-box col-span-4">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Reklame Video 
           </h3>
@@ -140,9 +140,9 @@ onMounted(() => {
       </div>
 
     <!-- Cafe app section -->
-      <div class="cafe-app-section grid grid-cols-12 gap-4 !mt-50">
+      <div class="cafe-app-section grid grid-cols-12 gap-4">
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 col-start-2 !mr-20">
+        <div class="cafe-text-box col-span-4 col-start-2">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Cafe App
           </h3>
@@ -157,13 +157,13 @@ onMounted(() => {
       </div>
 
        <!-- Velkomst projekt -->
-     <div class="velkomst-projekt-section grid grid-cols-12 gap-4 !mt-50">
+     <div class="velkomst-projekt-section grid grid-cols-12 gap-4">
         <!-- Image spans 6 columns -->
         <div class="col-span-7 mx-auto overflow-hidden h-125">
           <img src="../assets/velkomstprojekt.png" alt="webudvikling Image" class="w-full object-cover" />
         </div>
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 !ml-20">
+        <div class="velkomst-text-box col-span-4">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             Velkomst Projekt 
           </h3>
@@ -174,9 +174,9 @@ onMounted(() => {
       </div>
 
     <!-- So me section -->
-      <div class="so-me-section grid grid-cols-12 gap-4 !mt-50">
+      <div class="so-me-section grid grid-cols-12 gap-4">
         <!-- Text spans 5 columns -->
-        <div class="col-span-4 col-start-2 !mr-20">
+        <div class="so-me-text-box col-span-4 col-start-2">
           <h3 class="font-family1 text-very-dark text-4xl !mb-4">
             SoMe Samarbejder
           </h3>
@@ -197,50 +197,424 @@ onMounted(() => {
 
 <style>
 
+.portfolio-section {
+    margin-top: 10rem;
+  }
+
+  .portfolio-text-box {
+    margin: 80px;
+  }
+
+  .hotel-website-section{
+    margin-top: 10rem;
+  }
+
+  .hotel-text-box {
+    margin-left: 80px;
+  }
+
+  .event-section {
+    margin-top: 10rem;
+  }
+
+  .event-text-box {
+    margin-right: 80px;
+  }
+
+  .recipe-website-section {
+    margin-top: 10rem;
+  }
+
+  .recipe-text-box {
+    margin-left: 80px;
+  }
+
+  .plastic-project-section {
+    margin-top: 10rem;
+  }
+
+  .plastic-project-text-box {
+    margin-right: 80px;
+  }
+
+  .promo-video-section {
+    margin-top: 10rem;
+  }
+
+  .promo-video-text-box {
+    margin-left: 80px;
+  }
+
+  .cafe-app-section {
+    margin-top: 10rem;
+  }
+
+  .cafe-app-text-box {
+    margin-right: 80px;
+  }
+
+  .velkomst-projekt-section {
+    margin-top: 10rem;
+  }
+
+  .velkomst-projekt-text-box {
+    margin-left: 80px;
+  }
+
+  .so-me-section {
+    margin-top: 10rem;
+  }
+
+  .so-me-text-box {
+    margin-right: 80px;
+  }
+
+
+
+
+
+
 
 @media (max-width: 768px) {
 /* Portfolio */
 .portfolio-section {
-    height: auto; 
-    padding: 1rem; 
-    grid-template-columns: 1fr; 
-    
-  }
+  height: auto; 
+  padding: 1rem; 
+  grid-template-columns: 1fr; /* Single column layout */
+  margin-top: 3rem; /* Add spacing above the section */
+}
 
-  portfolio-section.grid {
-    margin-top: 1rem;
-  }
+.portfolio-container {
+  align-items: center; 
+  height: auto; 
+  padding: 1rem; 
+  box-sizing: border-box; 
+  width: 100%; 
+  margin-top: 0;
+}
 
-  .portfolio-container {
-    align-items: center; 
-    height: auto; 
-    padding: 1rem; 
-    box-sizing: border-box; 
-    width: 100%; 
-    margin-top: 0 !important; /* Fjern margin-top */
-  }
+.portfolio-container img {
+  display: none; /* Hide images on smaller screens */
+}
 
-  .portfolio-container img {
-    display: none;
-  }
+.portfolio-text-box {
+  width: 100%; 
+  padding: 1rem; 
+  box-sizing: border-box; 
+  margin: 0;
+}
 
-  .portfolio-text-box {
-    width: 100%; 
-    padding: 1rem; 
-    box-sizing: border-box; 
-    margin: none; 
-  }
-  .portfolio-text-box h3 {
-    font-size: 1rem; 
-    margin: none; 
-    padding-bottom: 1rem;
-  }
+.portfolio-text-box h3 {
+  font-size: 1rem; 
+  margin: 0; /* Ensure no extra margin */
+  padding-bottom: 1rem; /* Add spacing below the heading */
+}
 
-  .portfolio-text-box p {
-    font-size: 0.7rem; 
-    margin: none; 
-    width: 100%;
-  }
+.portfolio-text-box p {
+  font-size: 0.7rem; 
+  margin: 0; /* Ensure no extra margin */
+  width: 100%; /* Ensure full width */
+}
+
+/* Hotel Website Section */
+.hotel-website-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+    "text"
+    "image"; 
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.hotel-website-section .col-span-7 {
+  grid-area: image; 
+  height: auto;
+}
+
+.hotel-website-section .col-span-4 {
+  grid-area: text; 
+  margin-left: 1.2rem;  
+  margin-right: 1.2rem;
+}
+
+.hotel-text-box {
+  margin: 0;
+}
+.hotel-text-box h3 {
+  font-size: 1rem;
+}
+
+.hotel-text-box p {
+  font-size: 0.7rem;
+}
+
+/* Event Section */
+.event-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+    "text"
+    "image"; 
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.event-section .col-span-7 {
+  grid-area: image; 
+  height: auto;
+}
+
+.event-section .col-span-4 {
+  grid-area: text; 
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;    
+}
+
+.event-section img {
+  width: 100%; 
+  height: auto; 
+}
+
+.event-text-box {
+  margin: 0;
+}
+
+.event-text-box h3 {
+  font-size: 1rem; 
+}
+
+.event-text-box p {
+  font-size: 0.7rem; 
+}
+
+/* Recipe Website Section */
+.recipe-website-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+    "text"
+    "image"; 
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.recipe-website-section .col-span-7 {
+  grid-area: image; 
+  height: auto;
+}
+
+.recipe-website-section .col-span-4 {
+  grid-area: text; 
+  margin-left: 1.2rem;  
+  margin-right: 1.2rem;
+}
+
+.recipe-text-box {
+  margin: 0;
+}
+
+.recipe-text-box h3 {
+  font-size: 1rem;
+}
+
+.recipe-text-box p {
+  font-size: 0.7rem;
+}
+
+/* Plastic Project Section */
+
+.plastic-project-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+    "text"
+    "image"; 
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.plastic-project-section .col-span-7 {
+  grid-area: image; 
+  height: auto;
+}
+
+.plastic-project-section .col-span-4 {
+  grid-area: text; 
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;    
+}
+
+.plastic-project-section img {
+  width: 100%; 
+  height: auto; 
+}
+
+.plastic-project-text-box {
+  margin: 0;
+}
+
+.plastic-project-text-box h3 {
+  font-size: 1rem; 
+}
+
+.plastic-project-text-box p {
+  font-size: 0.7rem; 
+}
+
+/* Promo Video Section */
+
+.promo-video-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+    "text"
+    "image"; 
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.promo-video-section .col-span-7 {
+  grid-area: image; 
+  height: auto;
+}
+
+.promo-video-section .col-span-4 {
+  grid-area: text; 
+  margin-left: 1.2rem;  
+  margin-right: 1.2rem;
+}
+
+.promo-text-box {
+  margin: 0;
+}
+
+.promo-text-box h3 {
+  font-size: 1rem;
+}
+
+.promo-text-box p {
+  font-size: 0.7rem;
+}
+
+/* Cafe App Section */
+
+.cafe-app-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+    "text"
+    "image"; 
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.cafe-app-section .col-span-7 {
+  grid-area: image; 
+  height: auto;
+}
+
+.cafe-app-section .col-span-4 {
+  grid-area: text; 
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;    
+}
+
+.cafe-app-section img {
+  width: 100%; 
+  height: auto; 
+}
+
+.cafe-text-box {
+  margin: 0;
+}
+
+.cafe-text-box h3 {
+  font-size: 1rem; 
+}
+
+.cafe-text-box p {
+  font-size: 0.7rem; 
+}
+
+/* Velkomst Projekt Section */
+
+.velkomst-projekt-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+    "text"
+    "image"; 
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.velkomst-projekt-section .col-span-7 {
+  grid-area: image; 
+  height: auto;
+}
+
+.velkomst-projekt-section .col-span-4 {
+  grid-area: text; 
+  margin-left: 1.2rem;  
+  margin-right: 1.2rem;
+}
+
+.velkomst-text-box {
+  margin: 0;
+}
+
+.velkomst-text-box h3 {
+  font-size: 1rem;
+}
+
+.velkomst-text-box p {
+  font-size: 0.7rem;
+}
+
+/* SoMe Section */
+
+.so-me-section {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+    "text"
+    "image"; 
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.so-me-section .col-span-7 {
+  grid-area: image; 
+  height: auto;
+}
+
+.so-me-section .col-span-4 {
+  grid-area: text; 
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;    
+}
+
+.so-me-section img {
+  width: 100%; 
+  height: auto; 
+}
+
+.so-me-text-box {
+  margin: 0;
+}
+
+.so-me-text-box h3 {
+  font-size: 1rem; 
+}
+
+.so-me-text-box p {
+  font-size: 0.7rem; 
+}
+
+
+
+
 
 
 

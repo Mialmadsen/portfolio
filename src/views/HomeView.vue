@@ -41,7 +41,7 @@ onMounted(() => {
 <div class="velkommen-section grid grid-cols-12 h-125 opacity-0 translate-x-20 transition-all duration-700" ref="velkommenSection">
   <div class="velkommen-container col-span-8 col-start-3 h-125 bg-very-light-grey flex items-center">
     <div class="velkommen-text-box">
-      <h3 class="font-family1 text-very-dark text-4xl sm:text-2xl sm:align-left">
+      <h3 class="font-family1 text-very-dark text-4xl sm:text-4xl sm:align-left !pb-4">
         Velkommen til!
       </h3>
       <p class="font-family3 text-very-dark text-lg sm:w-full sm:ml-0 sm:text-left">
@@ -186,9 +186,7 @@ onMounted(() => {
     height: auto; 
     padding: 1rem; 
     grid-template-columns: 1fr; 
-    margin-top: 3rem;
-    margin-right: 1rem;
-    }
+    margin-top: 3rem;    }
 
   .velkommen-container {
     align-items: center; 
