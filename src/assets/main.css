@@ -18,18 +18,6 @@
 }
 
 
-
-#app {
-  width: 100%;
-}
-
-a,
-.green {
-  text-decoration: none;
-  transition: 0.4s;
-  padding: 3px;
-}
-
 body {
   background-color: #FEFDEF;
 }

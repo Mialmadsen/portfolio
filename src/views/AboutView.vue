@@ -74,17 +74,21 @@ onMounted(() => {
   </div>
 </div>
 
-   
-
     <!-- Video cv section -->
-    <div class="video-cv-section flex justify-center items-center !mt-50">
+    <div class="video-cv-section flex justify-center items-center bg-very-light-grey h-150 !mt-50">
       <iframe width="800" height="450" src="https://www.youtube.com/embed/lAhP_2eKS8I?si=xJEzl8vM0EBMGp7K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
 
+<div class="bg-very-light-grey h-20 flex items-center !mt-50">
+  <h3 class="font-family1 text-very-dark text-4xl !ml-20">
+    Og så til det personlige!
+  </h3>
+</div>
+
   <!-- Collage section 1 -->
 
-  <div class="collage-section-text flex flex-col !ml-20 !mt-50">
+  <div class="collage-section-text flex flex-col !ml-20 !mt-20">
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Jeg elsker at rejse, og tage flotte billeder undervejs!
     </h3>
@@ -107,6 +111,7 @@ onMounted(() => {
     <img src="../assets/collage3.jpg" alt="Photo 3" class="w-full h-200 object-cover" />
   </div>
 </div>
+
 
 <!-- Collage section 2 -->
 
@@ -221,3 +226,55 @@ onMounted(() => {
   
   </main>
 </template>
+
+
+<style>
+
+
+@media (max-width: 768px) {
+/* Om mig section */
+.om-mig-section {
+    height: auto; 
+    padding: 1rem; 
+    grid-template-columns: 1fr; 
+    
+  }
+
+  .om-mig-section.grid {
+    margin-top: 1rem;
+  }
+
+  .om-mig-container {
+    align-items: center; 
+    height: auto; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    width: 100%; 
+    margin-top: 0 !important; /* Fjern margin-top */
+  }
+
+  .om-mig-text-box {
+    width: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    margin: none; 
+  }
+  .om-mig-text-box h3 {
+    font-size: 1rem; 
+    margin: none; 
+    padding-bottom: 1rem;
+  }
+
+  .om-mig-text-box p {
+    font-size: 0.7rem; 
+    margin: none; 
+    width: 100%;
+  }
+
+
+
+
+
+}
+
+</style>

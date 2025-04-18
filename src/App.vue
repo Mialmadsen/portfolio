@@ -18,7 +18,7 @@ import NavBar from '@/components/NavBar.vue'
   
 </template>
 
-<style scoped>
+<style>
 
 
 
@@ -43,7 +43,7 @@ import NavBar from '@/components/NavBar.vue'
     margin-right: 2rem;
     font-size: 1rem;
     padding: 1rem 0;
-    margin-top: 0.5rem;
+    
   }
 }
 </style>

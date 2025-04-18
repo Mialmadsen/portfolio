@@ -194,3 +194,58 @@ onMounted(() => {
     
   </main>
 </template>
+
+<style>
+
+
+@media (max-width: 768px) {
+/* Portfolio */
+.portfolio-section {
+    height: auto; 
+    padding: 1rem; 
+    grid-template-columns: 1fr; 
+    
+  }
+
+  portfolio-section.grid {
+    margin-top: 1rem;
+  }
+
+  .portfolio-container {
+    align-items: center; 
+    height: auto; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    width: 100%; 
+    margin-top: 0 !important; /* Fjern margin-top */
+  }
+
+  .portfolio-container img {
+    display: none;
+  }
+
+  .portfolio-text-box {
+    width: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    margin: none; 
+  }
+  .portfolio-text-box h3 {
+    font-size: 1rem; 
+    margin: none; 
+    padding-bottom: 1rem;
+  }
+
+  .portfolio-text-box p {
+    font-size: 0.7rem; 
+    margin: none; 
+    width: 100%;
+  }
+
+
+
+
+
+}
+
+</style>

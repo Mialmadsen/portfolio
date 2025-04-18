@@ -41,10 +41,10 @@ onMounted(() => {
 <div class="velkommen-section grid grid-cols-12 h-125 !mt-40 opacity-0 translate-x-20 transition-all duration-700" ref="velkommenSection">
   <div class="velkommen-container col-span-8 col-start-3 h-125 bg-very-light-grey flex items-center">
     <div class="velkommen-text-box">
-      <h3 class="font-family1 text-very-dark text-4xl !ml-20">
+      <h3 class="font-family1 text-very-dark text-4xl !ml-20 sm:ml-0 sm:text-2xl sm:align-left">
         Velkommen til!
       </h3>
-      <p class="font-family3 text-very-dark text-lg w-1/2 !ml-20 !mt-4">
+      <p class="font-family3 text-very-dark text-lg !w-1/2 !ml-20 !mt-4 sm:w-full sm:ml-0 sm:text-left">
         Mit navn er Mia Lybæk Madsen - og dette er min portfolio-hjemmeside. 
         Her kan du læse om mig både proffesionelt og personligt, samt få et indblik i hvilke evner og kompetencer jeg har tillært mig indenfor verdenen som multimediedesigner. 
         Udforsk nogle af mine seneste projekter og kreationer, og lær mig bedre at kende som person. 
@@ -52,7 +52,7 @@ onMounted(() => {
         God fornøjelse!
       </p>
     </div>
-    <img src="../assets/welcome img.png" alt="welcome Image" class="w-1/3 justify-self-end !mb-1" />
+    <img src="../assets/welcome img.png" alt="welcome Image" class="!w-1/3 justify-self-end !mb-1" />
   </div>
 </div>
 
@@ -125,8 +125,96 @@ onMounted(() => {
   </main>
 </template>
 
-<style scoped>
+<style>
   .socials_wrapper img:hover {
     cursor: pointer;
   }
+
+
+  @media (max-width: 768px) {
+   
+    /* Hero Section */
+    .relative {
+      height: 30vh;
+    }
+
+    .relative img {
+      height: 30vh;
+      width: 100%;
+      object-fit: cover;
+    }
+    .relative h1 {
+      font-size: 2rem;
+    }
+
+    .relative h2 {
+      font-size: 1rem;
+    }
+
+
+  /* Velkommen Section */
+  .velkommen-section {
+    height: auto; 
+    padding: 1rem; 
+    grid-template-columns: 1fr; 
+    
+  }
+
+  .velkommen-section.grid {
+    margin-top: 1rem;
+  }
+
+  .velkommen-container {
+    align-items: center; 
+    height: auto; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    width: 100%; 
+    margin-top: 0 !important; /* Fjern margin-top */
+  }
+
+  .velkommen-container img {
+    display: none;
+  }
+
+  .velkommen-text-box {
+    width: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    margin: none; 
+  }
+  .velkommen-text-box h3 {
+    font-size: 1rem; 
+    margin: none; 
+    padding-bottom: 1rem;
+  }
+
+  .velkommen-text-box p {
+    font-size: 0.7rem; 
+    margin: none; 
+    width: 100%; 
+  }
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 </style>

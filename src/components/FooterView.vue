@@ -6,8 +6,9 @@
     <!-- Left Section -->
     <div class="col-span-1 col-start-2 font-family1 text-very-dark flex flex-col justify-start !pt-4">
         <RouterLink to="/">FORSIDE</RouterLink>
-        <RouterLink to="/about">OM MIG</RouterLink>
         <RouterLink to="/portfolio">PORTFOLIO</RouterLink>
+        <RouterLink to="/about">OM MIG</RouterLink>
+        
     </div>
 
     <!-- Center Social Icons -->
@@ -32,6 +33,6 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>
