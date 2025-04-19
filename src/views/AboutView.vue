@@ -92,7 +92,7 @@ onMounted(() => {
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Jeg elsker at rejse, og tage flotte billeder undervejs!
     </h3>
-    <p class="font-family3 text-very-dark w-1/2">
+    <p class="font-family3 text-lg text-very-dark w-1/2">
       Jeg elsker at rejse – følelsen af at være på vej et nyt sted hen, hvor alt føles friskt og uopdaget. Det er som om verden åbner sig lidt mere, hver gang jeg pakker min taske og tager afsted. Undervejs har kameraet altid en fast plads i hånden eller lommen. Det handler ikke bare om at tage billeder, men om at fange stemninger, farver og øjeblikke, som ellers ville flyve forbi. Små detaljer, gadeliv, landskaber og smil – det hele bliver til minder, jeg kan vende tilbage til igen og igen.
     </p>
 </div>
@@ -119,7 +119,7 @@ onMounted(() => {
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Ude godt men hjemme bedst!
     </h3>
-    <p class="font-family3 text-very-dark w-1/2">
+    <p class="font-family3 text-lg text-very-dark w-1/2">
       Selvom jeg elsker at rejse, så elsker jeg også at være hjemme og at indrette mit hjem – det føles som en kreativ proces, hvor hver ting får sin plads og sin betydning. Der er noget roligt og tilfredsstillende ved at skabe et rum, der føles rart at være i. At rydde op og skabe orden giver ikke kun visuel ro, men også mental klarhed. Jeg nyder at finde balance mellem funktion og æstetik, og det giver mig glæde, når hjemmet føles både personligt, indbydende og harmonisk.
     </p>
   </div>
@@ -145,7 +145,7 @@ onMounted(() => {
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Jeg nyder at være aktiv!
     </h3>
-    <p class="font-family3 text-very-dark w-1/2">
+    <p class="font-family3 text-lg text-very-dark w-1/2">
       Jeg bruger også meget tid på at være aktiv – både i fitnesscentret og ude i naturen. Der er noget stærkt ved følelsen af at bruge kroppen og mærke energien strømme. I fitness elsker jeg strukturen og fremgangen, mens naturen giver frihed, frisk luft og ro i sindet. Det er to vidt forskellige steder, men begge giver mig overskud, styrke og glæde. At bevæge sig er ikke bare træning – det er en måde at være til stede i nuet på.
     </p>
 </div>
@@ -171,7 +171,7 @@ onMounted(() => {
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Jeg udtrykker mig gennem mit tøj og min stil!
     </h3>
-    <p class="font-family3 text-very-dark w-1/2">
+    <p class="font-family3 text-lg text-very-dark w-1/2">
       Jeg elsker at udtrykke mig gennem mit tøj og min stil. Det er en måde at vise, hvem jeg er, uden at sige et ord. Farver, snit og detaljer fortæller små historier om mit humør, min kreativitet og min personlighed. Nogle dage er det klassisk og enkelt, andre dage legende og modigt – og begge dele føles lige rigtige. Stil er for mig ikke bare mode, men en forlængelse af mig selv.
     </p>
 </div>
@@ -329,7 +329,7 @@ onMounted(() => {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 1rem;
+  margin-right: 0;
 }
 
 .cv-businesscard-section a {
@@ -340,7 +340,6 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
-
 }
 
 
@@ -389,16 +388,22 @@ onMounted(() => {
 
 .photo-collage {
     display: grid;
-    grid-template-columns: 1fr; /* Stack images vertically */
-    gap: 1rem; /* Add spacing between images */
-    margin-top: 1rem; /* Adjust spacing above the collage */
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+    margin-top: 1rem; 
+    margin-bottom: 5rem;
   }
 
   .photo-collage img {
-    width: 100%; /* Make images take full width of their container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images are cropped properly */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
   }
+
+  .kontakt-mig-section {
+    margin-top: 3rem
+  }
+
 
 }
 
