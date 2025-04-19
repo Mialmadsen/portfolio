@@ -37,30 +37,30 @@ onMounted(() => {
 </div>
 
 <!-- Om mig section -->
-<div class="om-mig-section grid grid-cols-12 h-150 !mt-40 opacity-0 translate-x-20 transition-all duration-700"ref="omMigSection">
+<div class="om-mig-section grid grid-cols-12 h-150 opacity-0 translate-x-20 transition-all duration-700"ref="omMigSection">
   <div class="om-mig-container col-span-8 col-start-3 h-150 bg-very-light-grey flex items-center">
     <div class="om-mig-text-box">
-      <h3 class="font-family1 text-very-dark text-4xl !ml-20">
+      <h3 class="font-family1 text-very-dark text-4xl">
         Hvem er jeg?
       </h3>
-      <p class="font-family3 text-very-dark text-lg w-3/4 !ml-20 !mt-4">
+      <p class="font-family3 text-very-dark text-lg w-3/4 !mt-4">
         Mit navn er Mia Lybæk Madsen, og jeg er en kreativ person med en stor interresse for at skabe æstetisk indhold og udvikle hjemmesider. 
         Jeg har altid haft en interesse for design og teknologi, og derfor valgte jeg at tage en uddannelse som multimediedesigner. 
         Jeg er perfektionist og elsker at arbejde med detaljer, hvilket hjælper mig utrolig meget indenfor både design og webudvikling.
       </p>
-      <p class="font-family3 text-very-dark text-lg w-3/4 !ml-20 !mt-4">
+      <p class="font-family3 text-very-dark text-lg w-3/4 !mt-4">
         I min fritid elsker jeg at være kreativ, og jeg bruger meget tid på at lave indhold til sociale medier, samt at tage billeder og redigere videoer.
         Derudover elsker jeg at være aktiv, og jeg bruger meget tid på at træne og være ude i naturen, samt at bruge tid med mine venner og familie. 
         På denne side kan du læse mere om mig som person, se mit video CV herunder, samt mit CV og visitkort.
       </p>
     </div>
     <!-- CV & Visitkort -->
-    <div class="cv-businesscard-section flex flex-col items-center justify-center !mx-20">
+    <div class="cv-businesscard-section flex flex-col items-center justify-center">
       <a 
         href="/assets/CV.pdf" 
         target="_blank" 
         rel="noopener noreferrer" 
-        class="bg-very-grey text-butter-yellow font-family1 w-30 h-20 flex items-center justify-center !mb-10">
+        class="cv-button bg-very-grey text-butter-yellow font-family1 w-30 h-20 flex items-center justify-center">
         CV
       </a>
       <a 
@@ -75,29 +75,29 @@ onMounted(() => {
 </div>
 
     <!-- Video cv section -->
-    <div class="video-cv-section flex justify-center items-center bg-very-light-grey h-150 !mt-50">
+    <div class="video-cv-section flex justify-center items-center bg-very-light-grey h-150">
       <iframe width="800" height="450" src="https://www.youtube.com/embed/lAhP_2eKS8I?si=xJEzl8vM0EBMGp7K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
 
-<div class="bg-very-light-grey h-20 flex items-center !mt-50">
-  <h3 class="font-family1 text-very-dark text-4xl !ml-20">
+<div class="personal-section bg-very-light-grey h-20 flex items-center">
+  <h3 class="font-family1 text-very-dark text-4xl">
     Og så til det personlige!
   </h3>
 </div>
 
-  <!-- Collage section 1 -->
+<!-- Collage section 1 -->
 
-  <div class="collage-section-text flex flex-col !ml-20 !mt-20">
+<div class="collage-section-text flex flex-col">
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Jeg elsker at rejse, og tage flotte billeder undervejs!
     </h3>
-    <p class="font-family3 text-very-dark w-1/2 !mb-10">
+    <p class="font-family3 text-very-dark w-1/2">
       Jeg elsker at rejse – følelsen af at være på vej et nyt sted hen, hvor alt føles friskt og uopdaget. Det er som om verden åbner sig lidt mere, hver gang jeg pakker min taske og tager afsted. Undervejs har kameraet altid en fast plads i hånden eller lommen. Det handler ikke bare om at tage billeder, men om at fange stemninger, farver og øjeblikke, som ellers ville flyve forbi. Små detaljer, gadeliv, landskaber og smil – det hele bliver til minder, jeg kan vende tilbage til igen og igen.
     </p>
-  </div>
+</div>
 
-  <div class="photo-collage grid grid-cols-12 gap-4 !mt-10">
+<div class="photo-collage grid grid-cols-12 gap-4">
   <!-- First Image -->
   <div class="col-span-4">
     <img src="../assets/collage1.jpg" alt="Photo 1" class="w-full h-200 object-cover" />
@@ -115,16 +115,16 @@ onMounted(() => {
 
 <!-- Collage section 2 -->
 
-<div class="collage-section-text flex flex-col !ml-20 !mt-50">
+<div class="collage-section-text flex flex-col">
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Ude godt men hjemme bedst!
     </h3>
-    <p class="font-family3 text-very-dark w-1/2 !mb-10">
+    <p class="font-family3 text-very-dark w-1/2">
       Selvom jeg elsker at rejse, så elsker jeg også at være hjemme og at indrette mit hjem – det føles som en kreativ proces, hvor hver ting får sin plads og sin betydning. Der er noget roligt og tilfredsstillende ved at skabe et rum, der føles rart at være i. At rydde op og skabe orden giver ikke kun visuel ro, men også mental klarhed. Jeg nyder at finde balance mellem funktion og æstetik, og det giver mig glæde, når hjemmet føles både personligt, indbydende og harmonisk.
     </p>
   </div>
 
-  <div class="photo-collage grid grid-cols-12 gap-4 !mt-10">
+  <div class="photo-collage grid grid-cols-12 gap-4">
   <!-- First Image -->
   <div class="col-span-4">
     <img src="../assets/spisestue.jpg" alt="Photo 1" class="w-full h-200 object-cover" />
@@ -141,16 +141,16 @@ onMounted(() => {
 
 <!-- Collage section 3 -->
 
-<div class="collage-section-text flex flex-col !ml-20 !mt-50">
+<div class="collage-section-text flex flex-col">
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Jeg nyder at være aktiv!
     </h3>
-    <p class="font-family3 text-very-dark w-1/2 !mb-10">
+    <p class="font-family3 text-very-dark w-1/2">
       Jeg bruger også meget tid på at være aktiv – både i fitnesscentret og ude i naturen. Der er noget stærkt ved følelsen af at bruge kroppen og mærke energien strømme. I fitness elsker jeg strukturen og fremgangen, mens naturen giver frihed, frisk luft og ro i sindet. Det er to vidt forskellige steder, men begge giver mig overskud, styrke og glæde. At bevæge sig er ikke bare træning – det er en måde at være til stede i nuet på.
     </p>
-  </div>
+</div>
 
-  <div class="photo-collage grid grid-cols-12 gap-4 !mt-10">
+<div class="photo-collage grid grid-cols-12 gap-4">
   <!-- First Image -->
   <div class="col-span-4">
     <img src="../assets/natur.jpg" alt="Photo 1" class="w-full h-200 object-cover" />
@@ -167,16 +167,16 @@ onMounted(() => {
 
 <!-- Collage section 4 -->
 
-<div class="collage-section-text flex flex-col !ml-20 !mt-50">
+<div class="collage-section-text flex flex-col">
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Jeg udtrykker mig gennem mit tøj og min stil!
     </h3>
-    <p class="font-family3 text-very-dark w-1/2 !mb-10">
+    <p class="font-family3 text-very-dark w-1/2">
       Jeg elsker at udtrykke mig gennem mit tøj og min stil. Det er en måde at vise, hvem jeg er, uden at sige et ord. Farver, snit og detaljer fortæller små historier om mit humør, min kreativitet og min personlighed. Nogle dage er det klassisk og enkelt, andre dage legende og modigt – og begge dele føles lige rigtige. Stil er for mig ikke bare mode, men en forlængelse af mig selv.
     </p>
-  </div>
+</div>
 
-  <div class="photo-collage grid grid-cols-12 gap-4 !mt-10">
+<div class="photo-collage grid grid-cols-12 gap-4">
   <!-- First Image -->
   <div class="col-span-4">
     <img src="../assets/tøj2.jpg" alt="Photo 1" class="w-full h-200 object-cover" />
@@ -186,7 +186,7 @@ onMounted(() => {
     <img src="../assets/tøj1.jpg" alt="Photo 2" class="w-full h-200 object-cover" />
   </div>
   <!-- Third Image -->
-  <div class="col-span-4">
+  <div class="last-image col-span-4">
     <img src="../assets/tøj3.jpg" alt="Photo 3" class="w-full h-200 object-cover" />
   </div>
 </div>
@@ -194,8 +194,8 @@ onMounted(() => {
 
 
 
-      <!-- Kontakt mig section -->
-      <div class="kontakt-mig-section grid grid-cols-12 !mt-50">
+<!-- Kontakt mig section -->
+<div class="kontakt-mig-section grid grid-cols-12">
   <div class="col-span-8 col-start-3 h-125 bg-very-light-grey flex flex-col items-center justify-center text-center">
     <h3 class="font-family1 text-very-dark text-4xl !mb-4">
       Kontakt Mig
@@ -228,57 +228,184 @@ onMounted(() => {
 </template>
 
 
+<!-- Almindelig css styles -------------------------------------------------------------------------------------------------------------------- -->
+
 <style>
+
+.om-mig-section {
+  margin-top: 10rem;
+}
+
+.om-mig-text-box {
+  margin-left: 80px;
+}
+
+.cv-businesscard-section {
+  margin-right: 80px;
+}
+
+.cv-button {
+  margin-bottom: 3rem;
+}
+
+.video-cv-section {
+  margin-top: 10rem;
+}
+
+.personal-section {
+  margin-top: 10rem;
+}
+
+.personal-section h3 {
+  margin-left: 80px;
+}
+
+.collage-section-text {
+  margin-left: 80px;
+  margin-top: 5rem;
+}
+
+.photo-collage {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.kontakt-mig-section {
+  margin-top: 10rem;
+}
+
+
+
+  /* Media Queries for mobildesign ------------------------------------------------------------------------------------------------------------ */
 
 
 @media (max-width: 768px) {
+
 /* Om mig section */
+
 .om-mig-section {
-    height: auto; 
-    padding: 1rem; 
-    grid-template-columns: 1fr; 
-  }
+  height: auto; 
+  padding: 1rem; 
+  grid-template-columns: 1fr; 
+  margin-top: 3rem; 
+}
 
-  .om-mig-section.grid {
-    margin-top: 1rem;
-  }
+.om-mig-container {
+  align-items: center; 
+  height: auto; 
+  padding: 1rem; 
+  box-sizing: border-box; 
+  width: 100%; 
+  margin-top: 0;
+  flex-direction: column;
+}
 
-  .om-mig-container {
-    align-items: center; 
-    height: auto; 
-    padding: 1rem; 
-    box-sizing: border-box; 
-    width: 100%; 
-    margin-top: 0;
-    flex-direction: column;
-  }
+.om-mig-container img {
+  display: none; 
+}
 
-  .om-mig-text-box {
-    width: 100%; 
-    padding: 1rem; 
-    box-sizing: border-box; 
-    margin: none; 
-  }
-  .om-mig-text-box h3 {
-    font-size: 1rem; 
-    margin: none; 
-    padding-bottom: 1rem;
-  }
+.om-mig-text-box {
+  width: 100%; 
+  padding: 1rem; 
+  box-sizing: border-box; 
+  margin: 0;
+}
 
-  .om-mig-text-box p {
-    font-size: 0.7rem; 
-    margin: none; 
-    width: 100%;
-  }
+.om-mig-text-box h3 {
+  font-size: 1rem; 
+  margin: 0; 
+  padding-bottom: 1rem; 
+}
 
-  .cv-businesscard-section {
-    flex-direction: row;
-  }
+.om-mig-text-box p {
+  font-size: 0.7rem; 
+  margin: 0; 
+  width: 100%; 
+  margin-bottom: 1rem;
+}
 
+.cv-businesscard-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
 
-
-
+.cv-businesscard-section a {
+  width: 5rem;
+  height: 2rem;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
 
 }
+
+
+.cv-button {
+  margin-bottom: 0;
+  margin-right: 3rem;
+}
+
+.video-cv-section {
+  margin-top: 3rem;
+  height: 200px;
+}
+  
+.video-cv-section iframe {
+  width: 100%;
+  height: auto;
+}
+
+.personal-section {
+  margin-top: 3rem;
+  height: 45px;
+}
+
+.personal-section h3 {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.collage-section-text {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.collage-section-text h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.collage-section-text p {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.photo-collage {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack images vertically */
+    gap: 1rem; /* Add spacing between images */
+    margin-top: 1rem; /* Adjust spacing above the collage */
+  }
+
+  .photo-collage img {
+    width: 100%; /* Make images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images are cropped properly */
+  }
+
+}
+
+
+
+
+
+
 
 </style>

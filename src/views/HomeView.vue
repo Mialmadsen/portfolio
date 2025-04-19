@@ -1,22 +1,35 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref } from "vue"; 
+// Importerer `onMounted` og `ref` fra Vue. 
+// `ref` bruges til at oprette en reaktiv reference, og `onMounted` bruges til at udføre kode, når komponenten er monteret.
 
-const velkommenSection = ref(null);
+const velkommenSection = ref(null); 
+// Opretter en reaktiv reference `velkommenSection`, som initialiseres til `null`. 
+// Denne reference vil blive bundet til HTML-elementet for "Velkommen-sektionen" via `ref="velkommenSection"`.
 
-onMounted(() => {
+onMounted(() => { 
+  // `onMounted` sikrer, at koden indeni kun køres, når komponenten er blevet monteret i DOM'en.
+
   const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove("opacity-0", "translate-x-20");
-          entry.target.classList.add("opacity-100", "translate-x-0");
+    (entries) => { 
+      // Opretter en ny `IntersectionObserver`, som overvåger, om elementer kommer ind i eller forlader viewporten.
+      entries.forEach((entry) => { 
+        // Itererer gennem alle de observerede elementer (`entries`).
+        if (entry.isIntersecting) { 
+          // Tjekker, om elementet er synligt i viewporten (dvs. mindst 20% af det er synligt).
+          entry.target.classList.remove("opacity-0", "translate-x-20"); 
+          // Fjerner CSS-klasserne `opacity-0` og `translate-x-20`, som sandsynligvis gør elementet usynligt og forskudt.
+          entry.target.classList.add("opacity-100", "translate-x-0"); 
+          // Tilføjer CSS-klasserne `opacity-100` og `translate-x-0`, som gør elementet synligt og flytter det til sin oprindelige position.
         }
       });
     },
-    { threshold: 0.2 } // Aktiver når 20% af sektionen er synlig
+    { threshold: 0.2 } 
+    // Konfigurerer observeren til at trigge, når mindst 20% af elementet er synligt i viewporten.
   );
 
-  if (velkommenSection.value) observer.observe(velkommenSection.value);
+  if (velkommenSection.value) observer.observe(velkommenSection.value); 
+  // Starter observeren og overvåger det element, der er bundet til `velkommenSection`.
 });
 </script>
 
@@ -38,7 +51,7 @@ onMounted(() => {
     </div>
 
   <!-- Velkommen section -->
-<div class="velkommen-section grid grid-cols-12 h-125 opacity-0 translate-x-20 transition-all duration-700" ref="velkommenSection">
+<div class="velkommen-section grid grid-cols-12 h-125 opacity-0 translate-x-20 transition-all duration-700" ref="velkommenSection"> <!-- Binder HTML-elementet til den reaktive reference velkommenSection, som er defineret i scriptet-->
   <div class="velkommen-container col-span-8 col-start-3 h-125 bg-very-light-grey flex items-center">
     <div class="velkommen-text-box">
       <h3 class="font-family1 text-very-dark text-4xl sm:text-4xl sm:align-left !pb-4">
@@ -57,73 +70,75 @@ onMounted(() => {
 </div>
 
 
-    <!-- Webudvikling section -->
-      <div class="webudviking-section grid grid-cols-12 gap-4">
-        <!-- Image spans 6 columns -->
-        <div class="col-span-7 mx-auto overflow-hidden h-125">
-          <img src="../assets/Plastic website.png" alt="webudvikling Image" class="w-full object-cover" />
-        </div>
-        <!-- Text spans 5 columns -->
-        <div class="web-text col-span-4">
-          <h3 class="font-family1 text-very-dark text-4xl !mb-4">
-            Webudvikling
-          </h3>
-          <p class="font-family3 text-very-dark text-lg">
-            Den ene del af multimediedesign-verdenen for mig handler om at ideudvikle, designe og kode nye hjemmesider, samt vedligeholde og skabe nyt indhold på allerede eksisterende hjemmesider. Her har jeg kendskab til Figma, HTML, CSS, JavaScript, Vuejs, Tailwind, Github, Wordpress og en smule php. Undervejs på min uddannelse, har vi udviklet flere projekter, hvor vi har skulle bruge og vise vores evner indenfor disse områder. Et par eksempler kan ses på min portfolioside. 
-          </p>
-        </div>
-      </div>
-
-    <!-- Content Creation section -->
-      <div class="content-creation-section grid grid-cols-12 gap-4">
-        <!-- Text spans 5 columns -->
-        <div class="content-text col-span-4 col-start-2">
-          <h3 class="font-family1 text-very-dark text-4xl !mb-4">
-            Content Creation
-          </h3>
-          <p class="font-family3 text-very-dark text-lg">
-            Den anden del af multimediedesign-verdenen for mig handler om at skabe fangende, æstetisk og engagerende content som alt lige fra logoer, plakater og visitkort til produktbilleder, reklamevideoer, animationer og meget mere.
-            Her har jeg kendskab til Adobe programmerne: Indesign, Illustrator, Photoshop, Premiere Pro og After Effects, samt andre værktøjer som Canva, Canva Pro og Figjam. Eksempler på dette kan også ses på min portfolioside.
-          </p>
-        </div>
-        <!-- Image spans 6 columns -->
-        <div class="col-span-7 mx-auto overflow-hidden h-125">
-          <img src="../assets/coffeeposter.png" alt="webudvikling Image" class="w-full object-contain" />
-        </div>
-      </div>
-
-    <!-- Kontakt mig section -->
-    <div class="kontakt-mig-section grid grid-cols-12">
-  <div class="col-span-8 col-start-3 h-125 bg-very-light-grey flex flex-col items-center justify-center text-center">
-    <h3 class="font-family1 text-very-dark text-4xl !mb-4">
-      Kontakt Mig
-    </h3>
-    <p class="font-family2 text-very-dark text-lg !pb-4">
-      Er du interesseret i at samarbejde eller har du spørgsmål? Tøv ikke med at kontakte mig!
-    </p>
-    <p class="font-family3 text-very-dark text-lg">
-      Email: mia.l.madsen@live.dk
-    </p>
-    <p class="font-family3 text-very-dark text-lg">
-      Telefon: 26166752
-    </p>
-    <div class="socials_wrapper flex gap-4 !mt-4">
-      <a href="https://www.instagram.com/mia_lybaek_madsen/profilecard/">
-        <img alt="instagram logo" class="instagram" src="@/assets/instagram.svg" width="29" height="29" />
-      </a>  
-      <a href="https://www.linkedin.com/in/mialybaekmadsen/">
-        <img alt="linkedin logo" class="linkedin" src="@/assets/linkedin.svg" width="31" height="31" />
-      </a>
-      <a href="https://www.facebook.com/mia.madsen.3194?locale=da_DK">
-        <img alt="facebook logo" class="facebook" src="@/assets/facebook.svg" width="30" height="30" />
-      </a>
+ <!-- Webudvikling section -->
+  <div class="webudviking-section grid grid-cols-12 gap-4">
+    <!-- Image spans 6 columns -->
+    <div class="col-span-7 mx-auto overflow-hidden h-125">
+      <img src="../assets/Plastic website.png" alt="webudvikling Image" class="w-full object-cover" />
+    </div>
+    <!-- Text spans 5 columns -->
+    <div class="web-text col-span-4">
+      <h3 class="font-family1 text-very-dark text-4xl !mb-4">
+        Webudvikling
+      </h3>
+      <p class="font-family3 text-very-dark text-lg">
+        Den ene del af multimediedesign-verdenen for mig handler om at ideudvikle, designe og kode nye hjemmesider, samt vedligeholde og skabe nyt indhold på allerede eksisterende hjemmesider. Her har jeg kendskab til Figma, HTML, CSS, JavaScript, Vuejs, Tailwind, Github, Wordpress og en smule php. Undervejs på min uddannelse, har vi udviklet flere projekter, hvor vi har skulle bruge og vise vores evner indenfor disse områder. Et par eksempler kan ses på min portfolioside. 
+      </p>
     </div>
   </div>
-</div>
+
+  <!-- Content Creation section -->
+  <div class="content-creation-section grid grid-cols-12 gap-4">
+    <!-- Text spans 5 columns -->
+    <div class="content-text col-span-4 col-start-2">
+      <h3 class="font-family1 text-very-dark text-4xl !mb-4">
+        Content Creation
+      </h3>
+      <p class="font-family3 text-very-dark text-lg">
+        Den anden del af multimediedesign-verdenen for mig handler om at skabe fangende, æstetisk og engagerende content som alt lige fra logoer, plakater og visitkort til produktbilleder, reklamevideoer, animationer og meget mere.
+        Her har jeg kendskab til Adobe programmerne: Indesign, Illustrator, Photoshop, Premiere Pro og After Effects, samt andre værktøjer som Canva, Canva Pro og Figjam. Eksempler på dette kan også ses på min portfolioside.
+      </p>
+    </div>
+    <!-- Image spans 6 columns -->
+    <div class="col-span-7 mx-auto overflow-hidden h-125">
+       <img src="../assets/coffeeposter.png" alt="webudvikling Image" class="w-full object-contain" />
+    </div>
+  </div>
+
+  <!-- Kontakt mig section -->
+  <div class="kontakt-mig-section grid grid-cols-12">
+    <div class="col-span-8 col-start-3 h-125 bg-very-light-grey flex flex-col items-center justify-center text-center">
+      <h3 class="font-family1 text-very-dark text-4xl !mb-4">
+        Kontakt Mig
+      </h3>
+      <p class="font-family2 text-very-dark text-lg !pb-4">
+        Er du interesseret i at samarbejde eller har du spørgsmål? Tøv ikke med at kontakte mig!
+      </p>
+      <p class="font-family3 text-very-dark text-lg">
+        Email: mia.l.madsen@live.dk
+      </p>
+      <p class="font-family3 text-very-dark text-lg">
+        Telefon: 26166752
+      </p>
+      <div class="socials_wrapper flex gap-4 !mt-4">
+        <a href="https://www.instagram.com/mia_lybaek_madsen/profilecard/">
+          <img alt="instagram logo" class="instagram" src="@/assets/instagram.svg" width="29" height="29" />
+        </a>  
+        <a href="https://www.linkedin.com/in/mialybaekmadsen/">
+          <img alt="linkedin logo" class="linkedin" src="@/assets/linkedin.svg" width="31" height="31" />
+        </a>
+        <a href="https://www.facebook.com/mia.madsen.3194?locale=da_DK">
+          <img alt="facebook logo" class="facebook" src="@/assets/facebook.svg" width="30" height="30" />
+        </a>
+      </div>
+    </div>
+  </div>
   
   
   </main>
 </template>
+
+<!-- Almindelig CSS Styles -------------------------------------------------------------------------------------------- -->
 
 <style>
   .socials_wrapper img:hover {
@@ -159,6 +174,7 @@ onMounted(() => {
   }
 
 
+  /* Media Queries for mobildesign ------------------------------------------------------------------------------------------------------------ */
 
   @media (max-width: 768px) {
    
@@ -289,19 +305,19 @@ onMounted(() => {
 
   /* Kontakt mig Section */
   .kontakt-mig-section {
-    grid-template-columns: 1fr; /* Skift til én kolonne */
-    gap: 1rem; /* Tilføj afstand mellem elementerne */
-    margin: 0 auto; /* Centrer sektionen */
-    padding: 1rem; /* Tilføj indvendig afstand */
+    grid-template-columns: 1fr;
+    gap: 1rem; 
+    margin: 0 auto; 
+    padding: 1rem; 
     margin-right: 2rem;
     margin-top: 3rem;
     height: auto;
     }
 
   .kontakt-mig-section > div {
-    width: 100%; /* Gør tekstboksen fuld bredde */
-    margin: 0 auto; /* Centrer boksen */
-    padding: 1rem; /* Tilføj padding for spacing */
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 1rem; 
     height: auto;
     padding: 1rem;
   }
@@ -313,31 +329,20 @@ onMounted(() => {
 
   .kontakt-mig-section p {
     font-size: 0.7rem;
-    text-align: center; /* Sørg for, at teksten forbliver centreret */
+    text-align: center; 
   }
 
   .socials_wrapper {
-    justify-content: center; /* Centrer sociale ikoner */
-    gap: 1rem; /* Tilføj afstand mellem ikonerne */
+    justify-content: center; 
+    gap: 1rem; 
   }
 
   .socials_wrapper img {
-    width: 20px; /* Juster størrelsen på ikonerne */
+    width: 20px; 
     height: 20px;
   }
   
   
-
-
-
-
-
-
-
-
-
-
-
 }
 
 

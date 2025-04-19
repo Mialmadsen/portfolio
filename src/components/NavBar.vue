@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
-const isOpen = ref(false)
+const isOpen = ref(false) // Reaktiv variabel til at styre, om mobilmenuen er åben eller lukket
 </script>
 
 <template>
@@ -42,18 +42,18 @@ const isOpen = ref(false)
     <img src="@/assets/Logo 2.svg" alt="Logo" width="30" height="30" />
   </div>
 
-  <!-- Burger eller X ikon -->
-  <button @click="isOpen = !isOpen" class="pr-2 focus:outline-none">
-    <template v-if="isOpen">
+  <!-- Burger eller X ikon / knappen til at åbne menuen -->
+  <button @click="isOpen = !isOpen" class="pr-2 focus:outline-none"> <!-- Når knappen klikkes, ændres `isOpen` mellem `true` og `false` -->
+    <template v-if="isOpen"> <!-- Hvis `isOpen` er true, vises X-ikonet -->
       <!-- X ikon -->
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+      <svg class="w-6 h-6 text-very-dark" fill="none" stroke="currentColor" stroke-width="2"
            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </template>
-    <template v-else>
+    <template v-else> <!-- Hvis `isOpen` er false, vises burgerikonet -->
       <!-- Burger ikon -->
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+      <svg class="w-6 h-6 text-very-dark" fill="none" stroke="currentColor" stroke-width="2"
            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round"
               d="M4 6h16M4 12h16M4 18h16"></path>
@@ -62,13 +62,16 @@ const isOpen = ref(false)
   </button>
 </div>
 
-    <!-- Mobile Menu -->
+    <!-- Mobil menu fade animation-->
     <transition name="mobile-fade-slide">
-    <div v-if="isOpen" class="md:hidden mt-4 flex flex-col !space-y-1 text-center">
+    <div v-if="isOpen" class="md:hidden mt-4 flex flex-col !space-y-2 text-center"> <!-- Mobilmenuen vises kun, hvis `isOpen` er true -->
+      <!-- Link til forsiden. Når der klikkes, sættes `isOpen` til false for at lukke menuen -->
       <RouterLink to="/" @click="isOpen = false">FORSIDE</RouterLink>
+      <!-- Link til portfolio. Lukker menuen, når der klikkes -->
       <RouterLink to="/portfolio" @click="isOpen = false">PORTFOLIO</RouterLink>
+      <!-- Link til "Om mig". Lukker menuen, når der klikkes -->
       <RouterLink to="/about" @click="isOpen = false">OM MIG</RouterLink>
-      <div class="flex justify-center !gap-1 mt-2 !mb-6">
+      <div class="flex justify-center !gap-1 !mt-3 !mb-6">
         <a href="https://www.instagram.com/mia_lybaek_madsen/profilecard/">
           <img src="@/assets/instagram.svg" alt="Instagram" width="20" height="20" />
         </a>
@@ -84,35 +87,6 @@ const isOpen = ref(false)
   </nav>
 </template>
 
-
-<!-- Navbar before rensponsive design
-<template>
-    <nav class="grid grid-cols-12 gap-4">
-
-      <div class="col-span-3">
-        <RouterLink class="" to="/">FORSIDE</RouterLink>
-        <RouterLink class="" to="/portfolio">PORTFOLIO</RouterLink>
-        <RouterLink class="" to="/about">OM MIG</RouterLink>
-        
-      </div>
-
-
-        <div class="logo_wrapper col-span-6 flex justify-self-center">
-          <img alt="Personal logo" class="logo col-span-2" src="@/assets/Logo 2.svg" width="50" height="50" />
-        </div>
-        <div class="socials_wrapper_nav col-span-3 flex justify-self-end">
-          <a href="https://www.instagram.com/mia_lybaek_madsen/profilecard/">
-            <img alt="instagram logo" class="instagram" src="@/assets/instagram.svg" width="29" height="29" />
-          </a>  
-          <a href="https://www.linkedin.com/in/mialybaekmadsen/">
-            <img alt="linkedin logo" class="linkedin" src="@/assets/linkedin.svg" width="31" height="31" />
-          </a>
-           <a href="https://www.facebook.com/mia.madsen.3194?locale=da_DK">
-            <img alt="facebook logo" class="facebook" src="@/assets/facebook.svg" width="30" height="30" />
-           </a>
-        </div>
-    </nav>
-</template> -->
 
 <style>
 
