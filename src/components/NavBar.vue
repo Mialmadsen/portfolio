@@ -24,13 +24,13 @@ const isOpen = ref(false) // Reaktiv variabel til at styre, om mobilmenuen er å
       <!-- Socials -->
       <div class="col-span-3 flex justify-end gap-4 !pr-0">
         <a href="https://www.instagram.com/mia_lybaek_madsen/profilecard/">
-          <img src="@/assets/instagram.svg" alt="Instagram" width="29" height="29" />
+          <img src="@/assets/instagram.svg" alt="Instagram" width="28" height="28" class="instalogo" />
         </a>
         <a href="https://www.linkedin.com/in/mialybaekmadsen/">
-          <img src="@/assets/linkedin.svg" alt="LinkedIn" width="31" height="31" />
+          <img src="@/assets/linkedin.svg" alt="LinkedIn" width="30" height="30" />
         </a>
         <a href="https://www.facebook.com/mia.madsen.3194?locale=da_DK">
-          <img src="@/assets/facebook.svg" alt="Facebook" width="30" height="30" />
+          <img src="@/assets/facebook.svg" alt="Facebook" width="29" height="29" class="facebooklogo" />
         </a>
       </div>
     </div>
@@ -73,13 +73,13 @@ const isOpen = ref(false) // Reaktiv variabel til at styre, om mobilmenuen er å
       <RouterLink to="/about" @click="isOpen = false">OM MIG</RouterLink>
       <div class="flex justify-center !gap-1 !mt-3 !mb-6">
         <a href="https://www.instagram.com/mia_lybaek_madsen/profilecard/">
-          <img src="@/assets/instagram.svg" alt="Instagram" width="20" height="20" />
+          <img src="@/assets/instagram.svg" alt="Instagram" width="20" height="20" class="instalogo" />
         </a>
         <a href="https://www.linkedin.com/in/mialybaekmadsen/">
           <img src="@/assets/linkedin.svg" alt="LinkedIn" width="22" height="22" />
         </a>
         <a href="https://www.facebook.com/mia.madsen.3194?locale=da_DK">
-          <img src="@/assets/facebook.svg" alt="Facebook" width="21" height="21" />
+          <img src="@/assets/facebook.svg" alt="Facebook" width="21" height="21" class="facebooklogo-mobile" />
         </a>
       </div>
     </div>
@@ -110,6 +110,21 @@ nav {
   justify-self: center;
 
 }
+
+.instalogo {
+  padding-top: 1px;
+}
+
+.facebooklogo {
+  padding-top: 0.7px;
+}
+
+.facebooklogo-mobile {
+  padding-top: 0.3px;
+}
+
+
+
 
 nav a.router-link-exact-active {
   color: var(--color-very-grey);

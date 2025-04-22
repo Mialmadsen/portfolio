@@ -16,7 +16,7 @@
     </div>
 
     <!-- Center Social Icons -->
-    <div class="col-start-11 flex items-center justify-end">
+    <div class="icons col-start-11 flex items-center justify-end">
         <a href="https://www.instagram.com/mia_lybaek_madsen/profilecard/">
             <img alt="instagram logo" class="instagram" src="@/assets/instagram.svg" width="29" height="29" />
         </a>  
@@ -38,6 +38,16 @@
 
 footer {
     margin-top: 10rem;
+}
+
+.icons {
+    gap: 0.5rem;
+}
+
+
+
+footer a:hover {
+color: var(--color-very-light-grey);
 }
 
 @media (max-width: 768px) {

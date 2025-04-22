@@ -45,7 +45,7 @@ onMounted(() => {
         Derudover kan du også læse om noget af det arbejde jeg har lavet udenfor skolen som SoMe content creator, hvor jeg har arbejdet med at skabe indhold til sociale medier for forskellige brands.
       </p>
     </div>
-    <img src="../assets/pil.svg" alt="welcome Image" class="w-1/3 justify-self-end !mb-1 !pr-20" />
+    <img src="../assets/pil.svg" alt="welcome Image" class="w-1/3 justify-self-end !mb-1 !pr-20 h-50" />
   </div>
 </div>
 
@@ -240,7 +240,7 @@ onMounted(() => {
     margin-top: 10rem;
   }
 
-  .promo-video-text-box {
+  .promo-text-box {
     margin-left: 80px;
   }
 
@@ -248,7 +248,7 @@ onMounted(() => {
     margin-top: 10rem;
   }
 
-  .cafe-app-text-box {
+  .cafe-text-box {
     margin-right: 80px;
   }
 
@@ -256,7 +256,7 @@ onMounted(() => {
     margin-top: 10rem;
   }
 
-  .velkomst-projekt-text-box {
+  .velkomst-text-box {
     margin-left: 80px;
   }
 
@@ -277,11 +277,16 @@ onMounted(() => {
 
 @media (max-width: 768px) {
 /* Portfolio */
+
+.relative h1 {
+  padding-top: 1rem;
+}
+
 .portfolio-section {
   height: auto; 
   padding: 1rem; 
-  grid-template-columns: 1fr; /* Single column layout */
-  margin-top: 3rem; /* Add spacing above the section */
+  grid-template-columns: 1fr; 
+  margin-top: 3rem; 
 }
 
 .portfolio-container {
@@ -294,7 +299,7 @@ onMounted(() => {
 }
 
 .portfolio-container img {
-  display: none; /* Hide images on smaller screens */
+  display: none; 
 }
 
 .portfolio-text-box {
@@ -307,7 +312,6 @@ onMounted(() => {
 .portfolio-text-box h3 {
   font-size: 1rem; 
   margin: 0; 
-  padding-bottom: 1rem; 
 }
 
 .portfolio-text-box p {

@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main>
+  <main class="overflow-hidden">
 
 <!-- Hero Section -->
 <div class="relative w-full h-200 overflow-hidden">
@@ -44,7 +44,7 @@ onMounted(() => {
         Hvem er jeg?
       </h3>
       <p class="font-family3 text-very-dark text-lg w-3/4 !mt-4">
-        Mit navn er Mia Lybæk Madsen, og jeg er en kreativ person med en stor interresse for at skabe æstetisk indhold og udvikle hjemmesider. 
+        Mit navn er Mia, og jeg er en kreativ person med en stor interresse for at skabe æstetisk indhold og udvikle hjemmesider. 
         Jeg har altid haft en interesse for design og teknologi, og derfor valgte jeg at tage en uddannelse som multimediedesigner. 
         Jeg er perfektionist og elsker at arbejde med detaljer, hvilket hjælper mig utrolig meget indenfor både design og webudvikling.
       </p>
@@ -314,7 +314,6 @@ onMounted(() => {
 .om-mig-text-box h3 {
   font-size: 1rem; 
   margin: 0; 
-  padding-bottom: 1rem; 
 }
 
 .om-mig-text-box p {

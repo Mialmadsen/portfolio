@@ -8,7 +8,7 @@ const velkommenSection = ref(null);
 // Denne reference vil blive bundet til HTML-elementet for "Velkommen-sektionen" via `ref="velkommenSection"`.
 
 onMounted(() => { 
-  // `onMounted` sikrer, at koden indeni kun køres, når komponenten er blevet monteret i DOM'en.
+  // `onMounted` sikrer, at koden indeni kun køres, når komponenten bliver synlig når man scroller ned.
 
   const observer = new IntersectionObserver(
     (entries) => { 
@@ -18,7 +18,7 @@ onMounted(() => {
         if (entry.isIntersecting) { 
           // Tjekker, om elementet er synligt i viewporten (dvs. mindst 20% af det er synligt).
           entry.target.classList.remove("opacity-0", "translate-x-20"); 
-          // Fjerner CSS-klasserne `opacity-0` og `translate-x-20`, som sandsynligvis gør elementet usynligt og forskudt.
+          // Fjerner CSS-klasserne `opacity-0` og `translate-x-20`
           entry.target.classList.add("opacity-100", "translate-x-0"); 
           // Tilføjer CSS-klasserne `opacity-100` og `translate-x-0`, som gør elementet synligt og flytter det til sin oprindelige position.
         }
@@ -226,7 +226,6 @@ onMounted(() => {
   .velkommen-text-box h3 {
     font-size: 1rem; 
     margin: none; 
-    padding-bottom: 1rem;
   }
 
   .velkommen-text-box p {
