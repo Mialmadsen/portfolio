@@ -34,7 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main>
+  <main class="overflow-hidden">
     <!-- Hero Section -->
     <div class="relative w-full h-180 overflow-hidden">
       <!-- Hero Image -->

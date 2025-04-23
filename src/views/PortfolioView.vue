@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main>
+  <main class="overflow-hidden">
     <div class="relative w-full h-200 overflow-hidden">
       <!-- Hero Image -->
       <img src="../assets/portfoliohero.png" alt="Home Hero Image" class="absolute top-0 left-0 w-full h-200 object-cover" /> 
