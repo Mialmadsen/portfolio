@@ -25,10 +25,7 @@ onMounted(() => {
 
 <!-- Hero Section -->
 <div class="relative w-full h-200 overflow-hidden">
-  <!-- Hero Image -->
   <img src="../assets/mig.jpg" alt="Home Hero Image" class="absolute top-0 left-0 w-full h-200 object-cover" />
-      
-    <!-- Centered Text -->
     <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
         <h1 class="font-family1 text-butter-yellow text-5xl !mb-4">
           OM MIG
@@ -93,7 +90,7 @@ onMounted(() => {
       Jeg elsker at rejse, og tage flotte billeder undervejs!
     </h3>
     <p class="font-family3 text-lg text-very-dark w-1/2">
-      Jeg elsker at rejse – følelsen af at være på vej et nyt sted hen, hvor alt føles friskt og uopdaget. Det er som om verden åbner sig lidt mere, hver gang jeg pakker min taske og tager afsted. Undervejs har kameraet altid en fast plads i hånden eller lommen. Det handler ikke bare om at tage billeder, men om at fange stemninger, farver og øjeblikke, som ellers ville flyve forbi. Små detaljer, gadeliv, landskaber og smil – det hele bliver til minder, jeg kan vende tilbage til igen og igen.
+      Jeg elsker at rejse – følelsen af at være på vej et nyt sted hen, hvor alt føles friskt og spændende. Det er som om verden åbner sig lidt mere, hver gang jeg pakker min taske og tager afsted. Undervejs har kameraet altid en fast plads i hånden eller lommen. Det handler ikke bare om at tage billeder, men om at fange stemninger, farver og øjeblikke, som jeg kan se tilbage på. Små detaljer, liv, landskaber og smil – det hele bliver til minder.
     </p>
 </div>
 
@@ -120,20 +117,17 @@ onMounted(() => {
       Ude godt men hjemme bedst!
     </h3>
     <p class="font-family3 text-lg text-very-dark w-1/2">
-      Selvom jeg elsker at rejse, så elsker jeg også at være hjemme og at indrette mit hjem – det føles som en kreativ proces, hvor hver ting får sin plads og sin betydning. Der er noget roligt og tilfredsstillende ved at skabe et rum, der føles rart at være i. At rydde op og skabe orden giver ikke kun visuel ro, men også mental klarhed. Jeg nyder at finde balance mellem funktion og æstetik, og det giver mig glæde, når hjemmet føles både personligt, indbydende og harmonisk.
+      Selvom jeg elsker at rejse, så elsker jeg også at være hjemme og at indrette mit hjem – det føles som en kreativ proces, hvor hver ting får sin plads og sin betydning. Der er noget roligt og tilfredsstillende ved at skabe et rum, der føles rart at være i. At rydde op og skabe orden giver ikke kun visuel ro, men også mental ro. Det giver mig glæde, når hjemmet føles både personligt, indbydende og harmonisk. Mit hjem er min base.
     </p>
-  </div>
+</div>
 
-  <div class="photo-collage grid grid-cols-12 gap-4">
-  <!-- First Image -->
+<div class="photo-collage grid grid-cols-12 gap-4">
   <div class="col-span-4">
     <img src="../assets/spisestue.jpg" alt="Photo 1" class="w-full h-200 object-cover" />
   </div>
-  <!-- Second Image -->
   <div class="col-span-4">
     <img src="../assets/sofastue.jpg" alt="Photo 2" class="w-full h-200 object-cover" />
   </div>
-  <!-- Third Image -->
   <div class="col-span-4">
     <img src="../assets/køkken.jpg" alt="Photo 3" class="w-full h-200 object-cover" />
   </div>
@@ -146,20 +140,17 @@ onMounted(() => {
       Jeg nyder at være aktiv!
     </h3>
     <p class="font-family3 text-lg text-very-dark w-1/2">
-      Jeg bruger også meget tid på at være aktiv – både i fitnesscentret og ude i naturen. Der er noget stærkt ved følelsen af at bruge kroppen og mærke energien strømme. I fitness elsker jeg strukturen og fremgangen, mens naturen giver frihed, frisk luft og ro i sindet. Det er to vidt forskellige steder, men begge giver mig overskud, styrke og glæde. At bevæge sig er ikke bare træning – det er en måde at være til stede i nuet på.
+      Jeg bruger også meget tid på at være aktiv – både i fitnesscentret og ude i naturen. Der er noget stærkt ved følelsen af at bruge kroppen og mærke energien. I fitness elsker jeg strukturen og fremgangen, mens naturen giver frihed, frisk luft og ro i sindet. Det er to vidt forskellige steder, men begge giver mig overskud, styrke og glæde. At bevæge sig er ikke bare træning – det er en måde at være til stede i nuet på, og komme ud af mit eget hoved
     </p>
 </div>
 
 <div class="photo-collage grid grid-cols-12 gap-4">
-  <!-- First Image -->
   <div class="col-span-4">
     <img src="../assets/natur.jpg" alt="Photo 1" class="w-full h-200 object-cover" />
   </div>
-  <!-- Second Image -->
   <div class="col-span-4">
     <img src="../assets/fitness.jpg" alt="Photo 2" class="w-full h-200 object-cover" />
   </div>
-  <!-- Third Image -->
   <div class="col-span-4">
     <img src="../assets/løb.jpg" alt="Photo 3" class="w-full h-200 object-cover" />
   </div>
@@ -172,20 +163,17 @@ onMounted(() => {
       Jeg udtrykker mig gennem mit tøj og min stil!
     </h3>
     <p class="font-family3 text-lg text-very-dark w-1/2">
-      Jeg elsker at udtrykke mig gennem mit tøj og min stil. Det er en måde at vise, hvem jeg er, uden at sige et ord. Farver, snit og detaljer fortæller små historier om mit humør, min kreativitet og min personlighed. Nogle dage er det klassisk og enkelt, andre dage legende og modigt – og begge dele føles lige rigtige. Stil er for mig ikke bare mode, men en forlængelse af mig selv.
+      Jeg elsker at udtrykke mig gennem mit tøj og min stil. Det er en måde at vise, hvem jeg er, uden at sige et ord. Farver, snit og detaljer fortæller små historier om min kreativitet og min personlighed. Nogle dage er det klassisk og enkelt, andre dage legende og modigt – og begge dele føles lige rigtige. Stil er for mig ikke bare mode, men en forlængelse af mig selv.
     </p>
 </div>
 
 <div class="photo-collage grid grid-cols-12 gap-4">
-  <!-- First Image -->
   <div class="col-span-4">
     <img src="../assets/tøj2.jpg" alt="Photo 1" class="w-full h-200 object-cover" />
   </div>
-  <!-- Second Image -->
   <div class="col-span-4">
     <img src="../assets/tøj1.jpg" alt="Photo 2" class="w-full h-200 object-cover" />
   </div>
-  <!-- Third Image -->
   <div class="last-image col-span-4">
     <img src="../assets/tøj3.jpg" alt="Photo 3" class="w-full h-200 object-cover" />
   </div>
@@ -349,12 +337,12 @@ onMounted(() => {
 
 .video-cv-section {
   margin-top: 3rem;
-  height: 200px;
+  height: 290px;
 }
   
 .video-cv-section iframe {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .personal-section {

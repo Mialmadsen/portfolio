@@ -35,20 +35,20 @@ const isOpen = ref(false) // Reaktiv variabel til at styre, om mobilmenuen er å
       </div>
     </div>
 
-<!-- Mobil topbar -->
+<!-- Mobil nav -->
 <div class="md:hidden flex justify-between items-center w-full">
   <!-- Logo -->
   <div class="!p-1">
     <img src="@/assets/Logo 2.svg" alt="Logo" width="30" height="30" />
   </div>
-
+  <!-- Hjælp fra Copilot og Chat GPT start -->
   <!-- Burger eller X ikon / knappen til at åbne menuen -->
-  <button @click="isOpen = !isOpen" class="pr-2 focus:outline-none"> <!-- Når knappen klikkes, ændres `isOpen` mellem `true` og `false` -->
+  <button @click="isOpen = !isOpen" class="pr-2"> <!-- Når knappen klikkes, ændres `isOpen` mellem `true` og `false` -->
     <template v-if="isOpen"> <!-- Hvis `isOpen` er true, vises X-ikonet -->
       <!-- X ikon -->
       <svg class="w-6 h-6 text-very-dark" fill="none" stroke="currentColor" stroke-width="2"
-           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!-- Definere synsfeltet i kordinatsystem og bruger svg standard fra w3-->
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path> <!-- definerer formen ved kommandoer og koordinater (se notion noter)-->
       </svg>
     </template>
     <template v-else> <!-- Hvis `isOpen` er false, vises burgerikonet -->
@@ -84,6 +84,7 @@ const isOpen = ref(false) // Reaktiv variabel til at styre, om mobilmenuen er å
       </div>
     </div>
   </transition>
+  <!-- Hjælp fra Copilot og Chat GPT slut-->
   </nav>
 </template>
 

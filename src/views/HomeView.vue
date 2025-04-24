@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref } from "vue"; 
+// Hjælp fra Copilot og Chat GPT start
 // Importerer `onMounted` og `ref` fra Vue. 
 // `ref` bruges til at oprette en reaktiv reference, og `onMounted` bruges til at udføre kode, når komponenten er monteret.
 
@@ -31,15 +32,14 @@ onMounted(() => {
   if (velkommenSection.value) observer.observe(velkommenSection.value); 
   // Starter observeren og overvåger det element, der er bundet til `velkommenSection`.
 });
+// Hjælp fra Copilot og Chat GPT
 </script>
 
 <template>
   <main class="overflow-hidden">
     <!-- Hero Section -->
     <div class="relative w-full h-200 overflow-hidden">
-      <!-- Hero Image -->
       <img src="../assets/hero.png" alt="Home Hero Image" class="absolute top-0 left-0 w-full h-200 object-cover" />
-      <!-- Centered Text -->
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
         <h1 class="font-family1 text-very-dark text-5xl !mb-4">
           MIA LYBÆK MADSEN
@@ -72,11 +72,9 @@ onMounted(() => {
 
  <!-- Webudvikling section -->
   <div class="webudviking-section grid grid-cols-12 gap-4">
-    <!-- Image spans 6 columns -->
     <div class="col-span-7 mx-auto overflow-hidden h-125">
       <img src="../assets/Plastic website.png" alt="webudvikling Image" class="w-full object-cover" />
     </div>
-    <!-- Text spans 5 columns -->
     <div class="web-text col-span-4">
       <h3 class="font-family1 text-very-dark text-4xl !mb-4">
         Webudvikling
@@ -89,7 +87,6 @@ onMounted(() => {
 
   <!-- Content Creation section -->
   <div class="content-creation-section grid grid-cols-12 gap-4">
-    <!-- Text spans 5 columns -->
     <div class="content-text col-span-4 col-start-2">
       <h3 class="font-family1 text-very-dark text-4xl !mb-4">
         Content Creation
@@ -99,9 +96,8 @@ onMounted(() => {
         Her har jeg kendskab til Adobe programmerne: Indesign, Illustrator, Photoshop, Premiere Pro og After Effects, samt andre værktøjer som Canva, Canva Pro og Figjam. Eksempler på dette kan også ses på min portfolioside.
       </p>
     </div>
-    <!-- Image spans 6 columns -->
     <div class="col-span-7 mx-auto overflow-hidden h-125">
-       <img src="../assets/coffeeposter.png" alt="webudvikling Image" class="w-full object-contain" />
+       <img src="../assets/somesamarbejder.png" alt="webudvikling Image" class="w-full object-contain" />
     </div>
   </div>
 
