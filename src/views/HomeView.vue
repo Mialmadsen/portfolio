@@ -332,10 +332,22 @@ onMounted(() => {
     gap: 1rem; 
   }
 
-  .socials_wrapper img {
-    width: 20px; 
+  .instagram {
+    width: 19px;
+    height: 19px;
+  }
+
+  .linkedin {
+    width: 21px;
+    height: 21px;
+  }
+
+  .facebook {
+    width: 20px;
     height: 20px;
   }
+
+
   
   
 }
