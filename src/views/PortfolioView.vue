@@ -74,7 +74,7 @@ onMounted(() => {
     Vi fik til opgave at finde på et nyt event til Esbjerg, for at trække folk til udefra. Vi valgte at foreslå et Swim Run event, hvor vi efter at have undersøgt statistikker og segmenteret, fik taget billeder, filmet en reklamevideo, lavet en Instagram, en plakat og en content kalender for planen af de forskellige opslag.
     </p>
   </div>
-  <div class="col-span-7 mx-auto overflow-hidden h-125 border-2">
+  <div class="col-span-7 mx-auto overflow-hidden h-125 border-1">
     <img src="../assets/swimrun.png" alt="webudvikling Image" class="w-full object-contain" />
   </div>
 </div>
