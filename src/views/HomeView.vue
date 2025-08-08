@@ -59,7 +59,7 @@ onMounted(() => {
       </h3>
       <p class="font-family3 text-very-dark text-lg sm:w-full sm:ml-0 sm:text-left">
         Mit navn er Mia Lybæk Madsen - og dette er min portfolio-hjemmeside. 
-        Her kan du læse om mig både proffesionelt og personligt, samt få et indblik i hvilke evner og kompetencer jeg har tillært mig indenfor verdenen som multimediedesigner. 
+        Her kan du læse om mig både profesionelt og personligt, samt få et indblik i hvilke evner og kompetencer jeg har tillært mig indenfor verdenen som multimediedesigner. 
         Udforsk nogle af mine seneste projekter og kreationer, og lær mig bedre at kende som person. 
         Og tøv endelig ikke med at kontakte mig! 
         God fornøjelse!
